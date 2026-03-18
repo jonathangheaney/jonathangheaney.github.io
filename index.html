@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Jonathan G. Heaney — Sociology, Queen's University Belfast</title>
+    <meta name="description" content="Academic profile of Dr Jonathan G. Heaney, Lecturer in Sociology at Queen's University Belfast. Research on the sociology of emotions and power.">
+    <meta name="keywords" content="sociology, emotions, power, political sociology, social theory, Queen's University Belfast, Jonathan Heaney">
+    <meta property="og:title" content="Dr Jonathan G. Heaney — Sociology, QUB">
+    <meta property="og:description" content="Lecturer in Sociology at Queen's University Belfast. Research on the sociology of emotions and power.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jonathangheaney.github.io">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <style>
+        :root {
+            --ink: #1a1a2e;
+            --text: #2d2d3f;
+            --text-light: #5a5a72;
+            --accent: #7b2d3b;
+            --accent-hover: #963848;
+            --bg: #faf8f5;
+            --bg-warm: #f3efe9;
+            --border: #d6d0c6;
+            --border-light: #e8e3db;
+            --white: #ffffff;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.72;
+            font-size: 17px;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: var(--accent-hover); text-decoration: underline; }
+
+        /* ── NAV ── */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(250, 248, 245, 0.93);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--border-light);
+        }
+        .nav-inner {
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 0.7rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .nav-name {
+            font-family: 'Libre Baskerville', Georgia, serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--ink);
+            text-decoration: none;
+        }
+        .nav-name:hover { text-decoration: none; color: var(--accent); }
+        nav ul { list-style: none; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        nav ul a {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        nav ul a:hover { color: var(--accent); text-decoration: none; }
+
+        /* ── LAYOUT ── */
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        section { padding: 3rem 0; }
+        section + section { border-top: 1px solid var(--border-light); }
+
+        /* ── HERO ── */
+        .hero {
+            padding: 4rem 0 2.5rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        .hero h1 {
+            font-family: 'Libre Baskerville', Georgia, serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--ink);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        .hero .subtitle {
+            font-size: 1.12rem;
+            color: var(--text-light);
+            font-weight: 300;
+            line-height: 1.65;
+        }
+        .hero .subtitle a { font-weight: 400; }
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+        .social-links a {
+            color: var(--text-light);
+            transition: color 0.2s;
+        }
+        .social-links a:hover { color: var(--accent); text-decoration: none; }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            margin-top: 0.5rem;
+        }
+        .tag {
+            background: var(--bg-warm);
+            border: 1px solid var(--border);
+            padding: 0.25rem 0.75rem;
+            border-radius: 2px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--text-light);
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        /* ── HEADINGS ── */
+        .section-heading {
+            font-family: 'Libre Baskerville', Georgia, serif;
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.01em;
+        }
+        .section-heading::after {
+            content: '';
+            display: block;
+            width: 2rem;
+            height: 2px;
+            background: var(--accent);
+            margin-top: 0.55rem;
+        }
+        h3.sub-heading {
+            font-family: 'Libre Baskerville', Georgia, serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--ink);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        /* ── ABOUT ── */
+        .about-text p { margin-bottom: 1rem; }
+        .about-text p:last-child { margin-bottom: 0; }
+
+        .roles {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.55rem;
+        }
+        .role-item {
+            display: flex;
+            align-items: baseline;
+            gap: 0.7rem;
+        }
+        .role-bullet {
+            width: 6px; height: 6px; min-width: 6px;
+            background: var(--accent);
+            border-radius: 1px;
+            margin-top: 0.55rem;
+        }
+        .role-text { font-size: 0.96rem; }
+        .role-text strong { font-weight: 600; color: var(--ink); }
+
+        /* ── PUBLICATIONS ── */
+        .pub-year-heading {
+            font-family: 'Libre Baskerville', Georgia, serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-top: 1.75rem;
+            margin-bottom: 0.7rem;
+        }
+        .pub-year-heading:first-of-type { margin-top: 0; }
+        .pub-item {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid var(--border-light);
+            line-height: 1.6;
+            font-size: 0.96rem;
+            transition: border-color 0.2s;
+        }
+        .pub-item:hover { border-left-color: var(--accent); }
+        .pub-title { font-weight: 600; color: var(--ink); }
+        .pub-venue { font-style: italic; color: var(--text-light); }
+        .pub-badge {
+            display: inline-block;
+            background: var(--bg-warm);
+            border: 1px solid var(--border);
+            font-size: 0.73rem;
+            padding: 0.1rem 0.45rem;
+            border-radius: 2px;
+            font-weight: 600;
+            color: var(--accent);
+            margin-left: 0.3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            vertical-align: middle;
+        }
+        .pub-links { margin-top: 0.25rem; font-size: 0.85rem; }
+        .pub-links a { margin-right: 0.75rem; }
+
+        /* ── RESEARCH ── */
+        .project {
+            margin-bottom: 1.5rem;
+            padding: 1.2rem 1.4rem;
+            background: var(--white);
+            border: 1px solid var(--border-light);
+            border-radius: 3px;
+            transition: border-color 0.2s;
+        }
+        .project:hover { border-color: var(--accent); }
+        .project h3 {
+            font-family: 'Libre Baskerville', Georgia, serif;
+            font-size: 1.02rem;
+            color: var(--ink);
+            margin-bottom: 0.45rem;
+            line-height: 1.4;
+        }
+        .project p {
+            font-size: 0.94rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        .project-meta {
+            margin-top: 0.55rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        /* ── TEACHING ── */
+        .module {
+            margin-bottom: 1.25rem;
+        }
+        .module h4 {
+            font-weight: 600;
+            font-size: 0.98rem;
+            color: var(--ink);
+            margin-bottom: 0.15rem;
+        }
+        .module .module-meta {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 0.25rem;
+        }
+        .module p {
+            font-size: 0.94rem;
+            color: var(--text);
+        }
+
+        /* ── CONTACT ── */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.15rem;
+        }
+        .contact-card {
+            padding: 1.15rem 1.35rem;
+            background: var(--white);
+            border: 1px solid var(--border-light);
+            border-radius: 3px;
+        }
+        .contact-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+        }
+        .contact-value { font-size: 0.96rem; color: var(--ink); }
+        .contact-value a { color: var(--accent); }
+
+        /* ── FOOTER ── */
+        footer {
+            padding: 2rem 0 3rem;
+            border-top: 1px solid var(--border-light);
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--text-light);
+        }
+
+        /* ── MOBILE ── */
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 1.9rem; }
+            .hero { padding-top: 2.5rem; }
+            nav ul { gap: 1rem; }
+            nav ul a { font-size: 0.76rem; }
+            section { padding: 2rem 0; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="#" class="nav-name">J. G. Heaney</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+<header class="hero">
+    <div>
+        <h1>Dr Jonathan G. Heaney</h1>
+        <p class="subtitle">
+            Lecturer in Sociology · <a href="https://www.qub.ac.uk/schools/ssesw/" target="_blank" rel="noopener">School of Social Sciences, Education and Social Work</a><br>
+            <a href="https://www.qub.ac.uk/" target="_blank" rel="noopener">Queen's University Belfast</a>
+        </p>
+        <div class="social-links">
+            <a href="mailto:j.heaney@qub.ac.uk" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://orcid.org/0000-0002-2181-1510" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a>
+            <a href="https://scholar.google.com/citations?user=nheedpEAAAAJ" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=45161327800" target="_blank" rel="noopener" title="Scopus"><i class="ai ai-scopus"></i></a>
+            <a href="https://pure.qub.ac.uk/en/persons/jonathan-g-heaney" target="_blank" rel="noopener" title="QUB Pure"><i class="fas fa-university"></i></a>
+            <a href="https://twitter.com/jonathangheaney" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://theorytypes.wordpress.com/" target="_blank" rel="noopener" title="TheoryTypes blog"><i class="fas fa-blog"></i></a>
+        </div>
+        <div class="tags">
+            <span class="tag">Sociology of Emotions</span>
+            <span class="tag">Power</span>
+            <span class="tag">Emotional Capital</span>
+            <span class="tag">Political Sociology</span>
+            <span class="tag">Social Theory</span>
+            <span class="tag">Habitus</span>
+        </div>
+    </div>
+</header>
+
+<section id="about">
+    <h2 class="section-heading">About</h2>
+    <div class="about-text">
+        <p>
+            I am a Lecturer in Sociology at <a href="https://www.qub.ac.uk/" target="_blank">Queen's University Belfast</a>, where I have been based since September 2014. My research centres on the relationship between emotions and power, developing a process-relational theoretical framework that connects micro-level interaction, meso-level institutional dynamics, and macro-level political processes.
+        </p>
+        <p>
+            My primary research interests are interdisciplinary, lying at the intersections of sociology and politics. Emotion and power, along with affect and habitus, remain central to my ongoing research agenda in social theory and within the political sociology of emotions, as well as to my wider interests in the sociology and politics of Ireland, the digital sociology of emotion, and qualitative research methods.
+        </p>
+        <p>
+            I am currently completing a monograph for <a href="https://www.routledge.com/" target="_blank">Routledge</a>, provisionally titled <em>Emotions &amp; Power: Habitus and Change in Late Modernity</em>. I am a Fellow of the <a href="https://www.qub.ac.uk/research-centres/mitchell-institute/" target="_blank">Senator George J. Mitchell Institute for Global Peace, Security and Justice</a> and an Associate Fellow of the Institute of Irish Studies at QUB.
+        </p>
+        <p>
+            I completed my PhD in Sociology &amp; Politics at the National University of Ireland, Galway in 2014, funded by an Irish Research Council 'Government of Ireland Scholarship'. Prior to that, I returned to education as a mature student in 2004 and was awarded a BA (Hons) in Sociology &amp; Politics, and Economics, at NUI Galway in 2007, graduating first in my class with a double first and receiving a departmental fellowship for postgraduate study.
+        </p>
+    </div>
+    <div class="roles">
+        <div class="role-item">
+            <div class="role-bullet"></div>
+            <div class="role-text"><strong>Vice President</strong> — Sociological Association of Ireland (SAI)</div>
+        </div>
+        <div class="role-item">
+            <div class="role-bullet"></div>
+            <div class="role-text"><strong>Co-organiser</strong> — ÆRN: The Affect and Emotions Research Network (with Dr Clara Fischer)</div>
+        </div>
+        <div class="role-item">
+            <div class="role-bullet"></div>
+            <div class="role-text"><strong>Advisory Board</strong> — ESA Sociology of Emotions Research Network (RN11); former Chair (2017–2019) and Vice Chair (2015–2017)</div>
+        </div>
+        <div class="role-item">
+            <div class="role-bullet"></div>
+            <div class="role-text"><strong>Editorial Board</strong> — <a href="https://bristoluniversitypress.co.uk/journals/emotions-and-society" target="_blank"><em>Emotions &amp; Society</em></a> (Bristol University Press)</div>
+        </div>
+        <div class="role-item">
+            <div class="role-bullet"></div>
+            <div class="role-text"><strong>Associate Editor</strong> — <a href="https://www.frontiersin.org/journals/sociology/sections/sociology-of-emotion" target="_blank"><em>Frontiers in Sociology: Sociology of Emotion</em></a></div>
+        </div>
+        <div class="role-item">
+            <div class="role-bullet"></div>
+            <div class="role-text"><strong>Member</strong> — ESRC Peer Review College; Research Assessor, Carnegie Trust (Scotland)</div>
+        </div>
+        <div class="role-item">
+            <div class="role-bullet"></div>
+            <div class="role-text"><strong>Member of Academic Council</strong> — Queen's University Belfast (2025–2029)</div>
+        </div>
+    </div>
+</section>
+
+<section id="publications">
+    <h2 class="section-heading">Selected Publications</h2>
+
+    <p style="margin-bottom: 1.5rem; font-size: 0.92rem; color: var(--text-light);">
+        For a full list of 27 research outputs, see my <a href="https://pure.qub.ac.uk/en/persons/jonathan-g-heaney/publications/" target="_blank">QUB Pure profile</a> or <a href="https://scholar.google.com/citations?user=nheedpEAAAAJ" target="_blank">Google Scholar</a> (334 citations).
+    </p>
+
+    <div class="pub-year-heading">2024</div>
+
+    <div class="pub-item">
+        <span class="pub-title">Emotions and State Power: Towards the 'Emotional State'</span> <span class="pub-badge">Chapter</span><br>
+        In H. Flam (ed.) <span class="pub-venue">Research Handbook on the Sociology of Emotion: Institutions and Emotional Rule Regimes</span>. Cheltenham: Edward Elgar, pp. 128–150.
+        <div class="pub-links">
+            <a href="https://doi.org/10.4337/9781803925653.00013" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+            <a href="https://pure.qub.ac.uk/en/publications/emotions-and-state-power-towards-the-emotional-state-2/" target="_blank"><i class="fas fa-university"></i> Pure</a>
+        </div>
+    </div>
+
+    <div class="pub-year-heading">2023</div>
+
+    <div class="pub-item">
+        <span class="pub-title">(Un)Fixing Habitus: Affective Transactions and the Becoming Body</span> <span class="pub-badge">Article</span><br>
+        <span class="pub-venue">Distinktion: Journal of Social Theory</span>, 20 pp.
+        <div class="pub-links">
+            <a href="https://pure.qub.ac.uk/en/publications/unfixing-habitus-affective-transactions-and-the-becoming-body/" target="_blank"><i class="fas fa-university"></i> Pure</a>
+        </div>
+    </div>
+
+    <div class="pub-year-heading">2019</div>
+
+    <div class="pub-item">
+        <span class="pub-title">Emotion as Power: Capital and Strategy in the Field of Politics</span> <span class="pub-badge">Article</span><br>
+        <span class="pub-venue">Journal of Political Power</span>, 12(2), pp. 224–244.
+        <div class="pub-links">
+            <a href="https://doi.org/10.1080/2158379X.2019.1618485" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+            <a href="https://pure.qub.ac.uk/en/publications/emotion-as-power-capital-and-strategy-in-the-field-of-power/" target="_blank"><i class="fas fa-university"></i> Pure</a>
+        </div>
+    </div>
+
+    <div class="pub-year-heading">2014</div>
+
+    <div class="pub-item">
+        <span class="pub-title">Power and Emotion</span> <span class="pub-badge">Edited Book</span><br>
+        Edited with Helena Flam. London: <span class="pub-venue">Routledge</span>. (Originally published as special issue, <em>Journal of Political Power</em>, 6(3), 2013.)
+        <div class="pub-links">
+            <a href="https://www.routledge.com/Power-and-Emotion/Heaney-Flam/p/book/9780367739997" target="_blank"><i class="fas fa-external-link-alt"></i> Routledge</a>
+        </div>
+    </div>
+
+    <div class="pub-year-heading">2013</div>
+
+    <div class="pub-item">
+        <span class="pub-title">Emotions and Nationalism: A Reappraisal</span> <span class="pub-badge">Chapter</span><br>
+        In N. Demertzis (ed.) <span class="pub-venue">Emotions in Politics: The Affect Dimension in Political Tension</span>. London: Palgrave Macmillan, pp. 243–263.
+        <div class="pub-links">
+            <a href="https://doi.org/10.1057/9781137025661_13" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+            <a href="https://link.springer.com/chapter/10.1057/9781137025661_13" target="_blank"><i class="fas fa-book"></i> Springer</a>
+        </div>
+    </div>
+
+    <div class="pub-item">
+        <span class="pub-title">Emotions and Power: A Bifocal Prescription to Cure Theoretical Myopia</span> <span class="pub-badge">Editorial</span><br>
+        <span class="pub-venue">Journal of Political Power</span>, 6(3), pp. 355–362. Introduction to special issue on Power &amp; Emotion.
+    </div>
+
+    <div class="pub-year-heading">2011</div>
+
+    <div class="pub-item">
+        <span class="pub-title">Emotions and Power: Reconciling Conceptual Twins</span> <span class="pub-badge">Article</span><br>
+        <span class="pub-venue">Journal of Political Power</span>, 4(2), pp. 259–277. <em>One of the journal's most read and most cited papers.</em>
+        <div class="pub-links">
+            <a href="https://doi.org/10.1080/2158379X.2011.591171" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+            <a href="https://www.tandfonline.com/doi/abs/10.1080/2158379X.2011.591171" target="_blank"><i class="fas fa-book"></i> Taylor &amp; Francis</a>
+        </div>
+    </div>
+
+    <h3 class="sub-heading">Forthcoming</h3>
+
+    <div class="pub-item">
+        <span class="pub-title">Emotions &amp; Power: Habitus and Change in Late Modernity</span> <span class="pub-badge">Monograph</span><br>
+        <span class="pub-venue">Routledge</span>. Under contract.
+    </div>
+
+    <div class="pub-item">
+        <span class="pub-title">Power and Emotion</span> <span class="pub-badge">Chapter</span><br>
+        In <span class="pub-venue">Handbook of Political Power</span>. Edward Elgar Publishing.
+    </div>
+</section>
+
+<section id="research">
+    <h2 class="section-heading">Research</h2>
+
+    <div class="project">
+        <h3>Emotions &amp; Power: A Process-Relational Framework</h3>
+        <p>
+            My central research programme develops a multi-scalar theoretical framework for understanding the relationship between emotions and power. Drawing on process philosophy, relational sociology, and the sociology of emotions, this work connects micro-level interaction with meso-level institutional dynamics and macro-level political processes. Key concepts include emotional capital, processual approaches to the habitus, and the interplay of emotions and power within Bourdieu's 'field of power'. This programme underpins my forthcoming Routledge monograph.
+        </p>
+        <div class="project-meta">Monograph · Ongoing</div>
+    </div>
+
+    <div class="project">
+        <h3>The Emotional State</h3>
+        <p>
+            This project examines how the nation-state has been involved in the construction and deconstruction of the emotional life of the polity, how it reflects dominant emotional regimes, and how these processes change through time. It critically re-considers classical, modern, and contemporary state theory from a political sociology of emotions perspective. Supported by a BA/Leverhulme Small Research Grant (2015–2016).
+        </p>
+        <div class="project-meta">Funded Research · 2016–present</div>
+    </div>
+
+    <div class="project">
+        <h3>Emotional Swindling in Populist Politics</h3>
+        <p>
+            A current project examining how trust, affect, and the performance of authenticity operate within populist political discourse. Investigates the concept of 'emotional swindling' and its implications for democratic politics.
+        </p>
+        <div class="project-meta">Paper in Progress · 2025–</div>
+    </div>
+
+    <div class="project">
+        <h3>Embodied Nationalism</h3>
+        <p>
+            Building on my 2013 chapter on emotions and nationalism, this project investigates the emotional and embodied dimensions of national identification through the concept of 'national habitus'. The 2013 chapter has been widely cited and was translated into Croatian for a 2025 edited collection.
+        </p>
+        <div class="project-meta">Ongoing</div>
+    </div>
+
+    <div class="project">
+        <h3>ÆRN — The Affect and Emotions Research Network</h3>
+        <p>
+            Co-organised with Dr Clara Fischer, ÆRN brings together scholars working on affect and emotions across the social sciences and humanities. The network convenes workshops, supports collaborative research, and fosters interdisciplinary dialogue.
+        </p>
+        <div class="project-meta">Research Network · Ongoing</div>
+    </div>
+</section>
+
+<section id="teaching">
+    <h2 class="section-heading">Teaching</h2>
+
+    <div class="about-text">
+        <p>
+            My primary teaching interests are in classical and contemporary social theory, political sociology, the sociology of emotions, and the sociology and politics of Ireland. I teach the core social theory modules at both undergraduate and postgraduate levels and have developed specialist modules on emotions and politics.
+        </p>
+    </div>
+
+    <h3 class="sub-heading">Current Modules</h3>
+
+    <div class="module">
+        <h4>SOC3053: Emotions, Power &amp; Politics</h4>
+        <div class="module-meta">Undergraduate · Option · 2020–present</div>
+        <p>A research-led final year course analysing the contemporary social and political conjuncture from a political sociology of emotions perspective. Topics include populism, social movements, party politics, nationalism, and the state.</p>
+    </div>
+
+    <div class="module">
+        <h4>SOC2001: The Development of Social Theory</h4>
+        <div class="module-meta">Undergraduate · Core · 2014–present</div>
+    </div>
+
+    <div class="module">
+        <h4>SOC9024: Theory &amp; Debates in Social Research</h4>
+        <div class="module-meta">Postgraduate/Masters · Core · 2014–present</div>
+    </div>
+
+    <h3 class="sub-heading">Previous Modules</h3>
+
+    <div class="module">
+        <h4>SOC9048: Researching Emotions &amp; Social Life</h4>
+        <div class="module-meta">Postgraduate · Option · 2014–2018</div>
+    </div>
+
+    <div class="module">
+        <h4>SOC3048: Global Society: Power &amp; Participation</h4>
+        <div class="module-meta">Undergraduate · Option · 2015</div>
+    </div>
+
+    <h3 class="sub-heading">Supervision</h3>
+
+    <div class="about-text">
+        <p>
+            I supervise PhD, Masters, and undergraduate dissertation students. I am especially interested in supervising students working on the political sociology of emotions, emotions and power, habitus, nationalism, the state, or the digital sociology of emotion.
+        </p>
+        <p><strong>Completed PhD supervision (Primary Supervisor):</strong></p>
+    </div>
+    <div class="roles" style="margin-top: 0.5rem;">
+        <div class="role-item">
+            <div class="role-bullet"></div>
+            <div class="role-text"><strong>Sylvia McCracken</strong> — 'Religion, Identity and Young Adults in East Belfast' (Passed, 2016)</div>
+        </div>
+        <div class="role-item">
+            <div class="role-bullet"></div>
+            <div class="role-text"><strong>Alba Arenales</strong> — 'Riots and the militant constituency of the Provisional IRA: a case study of riots as a tactic during the Troubles (1969–1998)' (DfE funded)</div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-heading">Contact</h2>
+    <div class="contact-grid">
+        <div class="contact-card">
+            <div class="contact-label">Email</div>
+            <div class="contact-value">
+                <a href="mailto:j.heaney@qub.ac.uk">j.heaney@qub.ac.uk</a>
+            </div>
+        </div>
+        <div class="contact-card">
+            <div class="contact-label">Department</div>
+            <div class="contact-value">
+                School of Social Sciences,<br>Education and Social Work<br>
+                Queen's University Belfast<br>
+                Belfast BT7 1NN
+            </div>
+        </div>
+        <div class="contact-card">
+            <div class="contact-label">Academic Profiles</div>
+            <div class="contact-value">
+                <a href="https://pure.qub.ac.uk/en/persons/jonathan-g-heaney" target="_blank">QUB Pure</a><br>
+                <a href="https://scholar.google.com/citations?user=nheedpEAAAAJ" target="_blank">Google Scholar</a><br>
+                <a href="https://orcid.org/0000-0002-2181-1510" target="_blank">ORCID</a><br>
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=45161327800" target="_blank">Scopus</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <div class="container">
+        &copy; 2026 Dr Jonathan G. Heaney. All rights reserved.
+    </div>
+</footer>
+
+</body>
+</html>
